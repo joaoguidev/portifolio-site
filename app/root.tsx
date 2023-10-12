@@ -1,3 +1,4 @@
+import type { LinksFunction } from "@remix-run/cloudflare";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import {
   Links,
@@ -8,7 +9,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-export const links = () => [
+export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
