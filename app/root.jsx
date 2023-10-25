@@ -23,7 +23,7 @@ export default function App() {
             <Meta />
             <Links />
          </head>
-         <body>
+         <body className="m-0 w-[100vw] h-[100vh]">
             <Outlet />
             <ScrollRestoration />
             <Scripts />
